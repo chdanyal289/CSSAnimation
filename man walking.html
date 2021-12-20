@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man Walking On Road Animation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+.animation{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(road.jpg),
+                      url(road.jpg),
+                      url(road.jpg);
+    background-size: 100vw 100%;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        background-position: 300vw 0px,
+                             200vw 0px,
+                             100vw 0px;
+    }
+    
+}
+
+.man{
+    position: absolute;
+    height: 40%;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%);
+}
+</style>
+<body>
+    <div class="animation">
+        <img src="man.gif" alt="man" class="man">
+    </div>
+
+</body>
+</html>
