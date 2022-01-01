@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year | 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>
+            <span style="--i:1;"> H </span>
+            <span style="--i:2;"> a </span>
+            <span style="--i:3;"> p </span>
+            <span style="--i:4;"> p </span>
+            <span style="--i:5;"> y </span>
 
+            <span style="--i:5; margin-left: 10px;"> N </span>
+            <span style="--i:6;"> e </span>
+            <span style="--i:8;"> w </span>
+
+            <span style="--i:9; margin-left: 10px;"> Y </span>
+            <span style="--i:10;"> e </span>
+            <span style="--i:11;"> a </span>
+            <span style="--i:12;"> r </span>
+
+            <span style="--i:13; margin-left: 10px;"> 2 </span>
+            <span style="--i:14;"> 0 </span>
+            <span style="--i:15;"> 2 </span>
+            <span style="--i:16;"> 2 </span>
+        </h2>
+    </section>
+</body>
+</html>
+
+<script>
+    function stars()
+    {
+        const count = 400;
+        const section = document.querySelector('section');
+
+        var i = 0;
+
+
+        while(i < count)
+        {
+            const star = document.createElement('i');
+            const x = Math.floor(Math.random() * window.innerWidth)
+            const y = Math.floor(Math.random() * window.innerHeight)
+
+
+            const size = Math.random() * 4;
+            star.style.left = x + 'px';
+            star.style.top = y + 'px';
+            star.style.width = 1 + size + 'px';
+            star.style.height = 1 + size + 'px';
+
+
+            const duration = Math.random() * 2;
+            star.style.animationDuration = 2 + duration + 's';
+            star.style.animationDelay = duration + 's';
+
+            section.appendChild(star);
+            i++
+        }
+    }
+
+    stars();
+</script>

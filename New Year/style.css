@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #131419;
+}
+
+h2{
+    color: transparent;
+    font-size: 2vw;
+    line-height: 4em;
+    display: flex;
+    text-align: center;
+
+    z-index: 5;
+    transform: skewY(-7deg);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+@keyframes float{
+    0%{
+        transform: skewY(-7deg) translate(0, -20px);
+    }
+    50%{
+        transform: skewY(-7deg) translate(0, 20px);
+    }
+}
+
+
+
+h2 span{
+    font-size: 3em;
+    font-weight: 500;
+    animation: animate  3s linear infinite;
+
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%{
+        color: white;
+        filter: blur(1px) hue-rotate(0deg);
+        text-shadow: 0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan,
+        0 0 100px cyan;
+    }
+    30%,70%{
+        color: white;
+        filter: blur(1px) hue-rotate(0deg);
+        text-shadow: 0 0 10px cyan,
+        0 0 20px cyan,
+        0 0 40px cyan,
+        0 0 80px cyan,
+        0 0 100px cyan;
+    }
+
+    100%{
+        color: transparent;
+        box-shadow: none;
+    }
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section::before{
+    content: '';
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border: 5vw solid #ff20ff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1vw #222,
+                0 0 0 1.2vw white
+}
+section i{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white,
+                0 0 20px white,
+                0 0 30px white,
+                0 0 40px white;
+
+    animation: stars-animation 2s linear infinite;
+}
+
+@keyframes stars-animation{
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
