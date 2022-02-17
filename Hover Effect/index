@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hover Effect Style</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!------------------ Hover Effect Style : Demo - 1 --------------->
+        <div class="container">
+            <center><h2><b>6 Best Hower Effect Using HTML & CSS</b></h2></center>
+            <div class="row mt-40">
+                <div class="col-md-4 col-sm-6">
+                    <div class="box1">
+                        <img src="1.jpg" alt="">
+                        <h3 class="title">Danyal</h3>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box2">
+                        <img src="2.jpg">
+                        <div class="box-content">
+                            <div class="inner-content">
+                                <h3 class="title">Danyal</h3>
+                                <span class="post">Web Developer</span>
+                                <ul class="icon">
+                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box7">
+                        <img src="3.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Danyal</h3>
+                            <span class="post">Web Developer</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!------------------ Hover Effect Style : Demo - 2 --------------->
+        <div class="container mt-40">
+            <div class="row mt-30">
+                <div class="col-md-4 col-sm-6">
+                    <div class="box4">
+                        <img src="4.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Danyal</h3>
+                            <span class="post">Web Developer</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box5">
+                        <img src="5.jpg" alt="">
+                        <ul class="icon">
+                            <li><a href="#" class="fa fa-search"></a></li>
+                            <li><a href="#" class="fa fa-link"></a></li>
+                        </ul>
+                        <div class="box-content">
+                            <h3 class="title">Danyal</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="box6">
+                        <img src="6.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Danyal</h3>
+                            <span class="post">Web Developer</span>
+                            <ul class="icon">
+                                <li><a href="#" class="fa fa-search"></a></li>
+                                <li><a href="#" class="fa fa-link"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    </body>
+</html>
