@@ -1,0 +1,154 @@
+/*********************** Demo - 1 *******************/
+.box1 img,
+.box1:after,
+.box1:before{width:100%;transition:all .3s ease 0s}
+.box1 .icon,
+.box2,.box3,
+.box4,.box5 
+.icon li a{text-align:center}
+.box10:after,
+.box10:before,
+.box1:after,
+.box1:before,
+.box2 
+.inner-content:after,
+.box3:after,
+.box3:before,
+.box4:before,
+.box5:after,
+.box5:before,
+.box6:after,
+.box7:after,
+.box7:before{content:""}
+.box1,.box11,.box12,.box13,.box14,.box16,.box17,.box18,.box2,.box20,.box21,.box3,.box4,.box5,.box5 .icon li a,.box6,.box7,.box8{overflow:hidden}
+.box1 .title,.box10 .title,.box4 .title,.box7 .title{letter-spacing:1px}
+.box3 .post,.box4 .post,.box5 .post,.box7 .post{font-style:italic}
+body{background-color:#f1f1f2}
+.mt-30{margin-top:30px}
+.mt-40{margin-top:40px}
+.mb-30{margin-bottom:30px}
+.box1 .icon,.box1 .title{margin:0;position:absolute}
+.box1{box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
+.box1:after,.box1:before{height:50%;background:rgba(0,0,0,.5);position:absolute;top:0;left:0;z-index:1;transform-origin:100% 0;transform:rotateZ(90deg)}
+.box1:after{top:auto;bottom:0;transform-origin:0 100%}
+.box1:hover:after,.box1:hover:before{transform:rotateZ(0)}
+.box1 img{height:auto;transform:scale(1) rotate(0)}
+.box1:hover img{filter:sepia(80%);transform:scale(1.3) rotate(10deg)}
+.box1 .title{font-size:19px;font-weight:600;color:#fff;text-transform:uppercase;text-shadow:0 0 1px #004cbf;bottom:10px;left:10px;opacity:0;z-index:2;transform:scale(0);transition:all .5s ease .2s}
+.box1:hover .title{opacity:1;transform:scale(1)}
+.box1 .icon{padding:7px 5px;list-style:none;background:#004cbf;border-radius:0 0 0 10px;top:-100%;right:0;z-index:2;transition:all .3s ease .2s}
+.box1:hover .icon{top:0}
+.box1 .icon li{display:block;margin:10px 0}
+.box1 .icon li a{display:block;width:35px;height:35px;line-height:35px;border-radius:10px;font-size:18px;color:#fff;transition:all .3s ease 0s}
+.box2 .icon li a,.box3 .icon a:hover,.box4 .icon li a:hover,.box5 .icon li a,.box6 .icon li a{border-radius:50%}
+.box1 .icon li a:hover{color:#fff;box-shadow:0 0 10px #000 inset,0 0 0 3px #fff}
+@media only screen and (max-width:990px){.box1{margin-bottom:30px}
+}
+
+/*********************** Demo - 2 *******************/
+.box2{position:relative}
+.box2 img{width:100%;height:auto}
+.box2 .box-content{width:100%;height:100%;position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%)}
+.box2 .box-content:after,.box2 .box-content:before,.box2:after,.box2:before{content:"";width:80%;height:80%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(45deg);transition:all .5s ease 0s}
+.box2:before{background:linear-gradient(45deg,rgba(0,0,0,.2) 49%,transparent 50%);left:-100%}
+.box2:after{background:linear-gradient(45deg,transparent 49%,rgba(0,0,0,.2) 50%);left:160%}
+.box2 .box-content:after,.box2 .box-content:before{width:65%;height:65%;background:linear-gradient(45deg,rgba(0,0,0,.3) 49%,transparent 50%);left:-100%;transition-delay:.1s}
+.box1 .box-content:after{background:linear-gradient(45deg,transparent 49%,rgba(0,0,0,.3) 50%);left:160%}
+.box2:hover .box-content:after,.box2:hover .box-content:before,.box2:hover:after,.box2:hover:before{left:50%}
+.box2 .inner-content{width:50%;height:50%;color:#fff;padding:40px 0;position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%) scale(0);transition:all .3s ease .2s}
+.box2 .inner-content:after{width:100%;height:100%;background:rgba(255,79,79,.8);position:absolute;top:50%;left:50%;z-index:-1;transform:translate(-50%,-50%) rotate(45deg)}
+.box2:hover .inner-content{transform:translate(-50%,-50%) scale(1);transition:all .3s ease 0s}
+.box2 .title{font-size:18px;font-weight:700;text-transform:uppercase;margin-bottom:5px}
+.box2 .post{display:block;font-size:14px;text-transform:capitalize;margin-bottom:7px}
+.box10 .title,.box11 .title,.box4 .title,.box5 .title,.box6 .box-content,.box7 .title{text-transform:uppercase}
+.box2 .icon{padding:0;margin:0;list-style:none;transform:rotateY(360deg) scale(0);transition:all .3s ease 0s}
+.box2:hover .icon{transform:rotateY(0) scale(1)}
+.box2 .icon li{display:inline-block;margin:0 3px}
+.box2 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:16px;color:#505050;transition:all .3s ease 0s}
+.box2 .icon li a:hover{box-shadow:0 0 0 5px rgba(0,0,0,.5);background:#fff;color:#ff4f4f}
+@media only screen and (max-width:990px){.box2{margin-bottom:30px}
+}
+@media only screen and (max-width:320px){.box2 .inner-content{padding:25px 0}
+.box2 .title{font-size:16px}
+}
+
+/*********************** Demo - 4 *******************/
+.box4{position:relative}
+.box4:before{width:0;height:200%;background:rgba(0,0,0,.5);position:absolute;top:0;left:-250px;bottom:0;transform:skewX(-36deg);transition:all .5s ease 0s}
+.box4:hover:before{width:200%}
+.box4 img{width:100%;height:auto}
+.box4 .box-content{width:100%;height:100%;padding-top:20%;position:absolute;top:0;left:0;transform:scale(0);transition:all .3s ease 0s}
+.box4 .icon,.box5 .icon{list-style:none;padding:0}
+.box4:hover .box-content{transform:scale(1)}
+.box4 .title{font-size:22px;font-weight:700;color:#fff;margin:0 0 10px}
+.box4 .post{display:block;font-size:15px;font-weight:600;color:#fff;margin-bottom:20px}
+.box4 .icon{margin:0}
+.box4 .icon li{display:inline-block}
+.box4 .icon li a{display:block;width:35px;height:35px;line-height:35px;font-size:20px;background:#fff;color:#ee4266;margin-right:10px;transition:all .3s ease 0s}
+.box5 .icon,.box5 .icon li{display:inline-block}
+@media only screen and (max-width:990px){.box4{margin-bottom:30px}
+}
+@media only screen and (max-width:767px){.box4:before{left:-400px}
+.box4:hover:before{width:300%}
+}
+
+/*********************** Demo - 5 *******************/
+.box5{background:#444;position:relative}
+.box5:after,.box5:before{width:50px;height:50px;border-radius:50%;background:#10a5b8;position:absolute;top:-80px;left:15px;opacity:0;z-index:1;transition:all .35s ease}
+.box5:after{top:auto;left:auto;bottom:-80px;right:15px}
+.box5:hover:after,.box5:hover:before{opacity:.75;transform:scale(8);transition-delay:.15s}
+.box5 img{width:100%;height:auto;transition:all .35s ease-out 0s}
+.box5:hover img{opacity:.4}
+.box5 .icon{margin:0;position:absolute;bottom:15px;right:15px;z-index:2;transform:scale(0);transition:all .35s ease-out}
+.box5:hover .icon{transform:scale(1);transition-delay:.15s}
+.box5 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:18px;color:#444;margin-right:10px;position:relative;transition:all .5s ease 0s}
+.box5 .icon li a:hover{background:#444;color:#fff}
+.box5 .box-content{padding:20px 15px;position:absolute;top:0;left:0;z-index:1}
+.box5 .title{font-size:20px;font-weight:800;color:#fff;margin:0 0 5px;opacity:0;transform:translate(-20px,-20px);transition:all .35s ease-out}
+.box5:hover .title{opacity:1;transform:translate(0,0);transition-delay:.15s}
+.box5 .post{display:inline-block;font-size:16px;color:#fff;opacity:0;transform:translate(-20px,-20px);transition:all .35s ease-out}
+.box5:hover .post{opacity:1;transform:translate(0,0);transition-delay:.15s}
+.box6 .title,.box6 img,.box6:after{transition:all .35s ease 0s}
+@media only screen and (max-width:990px){.box5{margin-bottom:30px}
+}
+
+/*********************** Demo - 6 *******************/
+.box6{background:#000;position:relative}
+.box6:after{background:rgba(0,0,0,.7);position:absolute;top:0;left:-30%;bottom:0;right:70%;transform:skew(20deg) translateX(-75%)}
+.box6:hover:after{transform:skew(20deg) translateX(0)}
+.box6 img{width:100%;height:auto}
+.box6:hover img{opacity:.5}
+.box6 .box-content{padding:20px;text-align:right;position:absolute;top:0;right:0;z-index:1}
+.box6 .icon,.box7 .icon{padding:0;list-style:none}
+.box10 .icon li a,.box11,.box12,.box13,.box14,.box6 .icon li a,.box7,.box7 .icon li a,.box8,.box8 .icon li a{text-align:center}
+.box6 .title{font-size:20px;font-weight:900;color:#fff;margin:0 0 10px;transform:scale(0)}
+.box6:hover .title{transform:scale(1)}
+.box6 .icon li,.box6 .post{opacity:0;transform:translateX(40px);transition:all .35s ease 0s}
+.box6 .post{display:block;font-size:14px;color:#fff;margin-bottom:5px}
+.box6 .icon{display:inline-block;margin:0}
+.box6:hover .icon li,.box6:hover .post{opacity:1;transform:translateX(0)}
+.box6:hover .icon li:first-child{transition-delay:.1s}
+.box6:hover .icon li:nth-child(2){transition-delay:.2s}
+.box6 .icon li a{display:block;width:35px;height:35px;line-height:35px;background:#fff;font-size:18px;color:#605f5f;margin-bottom:5px;transition:all .35s ease}
+.box6 .icon li a:hover{background:#605f5f;color:#fff}
+@media only screen and (max-width:990px){.box6{margin-bottom:30px}
+}
+
+/*********************** Demo - 7 *******************/
+.box7{position:relative}
+.box7:after,.box7:before{width:100%;height:100%;background:rgba(11,33,47,.9);position:absolute;top:0;left:0;opacity:0;transition:all .5s ease 0s}
+.box7:after{background:rgba(255,255,255,.3);border:2px solid #0dab76;top:0;left:170%;opacity:1;z-index:1;transform:skewX(45deg);transition:all 1s ease 0s}
+.box7:hover:before{opacity:1}
+.box7:hover:after{left:-170%}
+.box7 img{width:100%;height:auto}
+.box7 .box-content{width:100%;position:absolute;bottom:-100%;left:0;transition:all .5s ease 0s}
+.box7:hover .box-content{bottom:30%}
+.box7 .title{display:block;font-size:22px;font-weight:700;color:#fff;margin:0 0 10px}
+.box7 .post{display:block;font-size:15px;font-weight:600;color:#fff;margin-bottom:10px}
+.box7 .icon{margin:0}
+.box7 .icon li{display:inline-block}
+.box7 .icon li a{display:block;width:35px;height:35px;line-height:35px;border-radius:50%;background:#0dab76;font-size:18px;color:#fff;margin-right:10px;transition:all .5s ease 0s}
+.box8 .icon li,.box8 .title{display:inline-block}
+.box7 .icon li a:hover{transform:rotate(360deg)}
+@media only screen and (max-width:990px){.box{margin-bottom:30px}
+}
