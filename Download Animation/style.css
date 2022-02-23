@@ -59,11 +59,6 @@ body
   white-space: nowrap;
   color: #222;
 }
-.btn.active .completed
-{
-  animation: top_bottom 1.3s linear forwards;
-  animation-delay: 6.5s;
-}
 .btn.active
 {
   width: 600px;
