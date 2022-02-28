@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#009be4, #009be4);
+}
+.road{
+    position: absolute;
+    width: 80vw;
+    height: 100px;
+    background: #444;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg);
+}
+.road::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, #fff 0%, #fff 60%, #444 60%, #444 100%);
+    background-size: 110px;
+    animation: animate 0.6s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0px;
+    }
+    0%{
+        background-position: 110px;
+    }
+}
+
+.road::after{
+    content: '';
+    width: 100%;
+    height: 20px;
+    background: #222;
+    transform-origin: top;
+    transform: perspective(500px) rotateX(-20deg);
+    position: absolute;
+    top: 100%;
+}
+.shadow{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    height: 50px;
+    width: 97%;
+    background: linear-gradient(#000, transparent);
+    opacity: 0.8;
+}
+#runner{
+    z-index: 4;
+    transform: translateY(-50%);
+}
