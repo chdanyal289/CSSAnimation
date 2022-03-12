@@ -1,0 +1,224 @@
+/***----------font-family: 'Satisfy', cursive-----------------*****/
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    min-height:100vh;
+    background: #fffbf0;
+    font-family: 'Satisfy', cursive;
+}
+
+svg
+{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 40px;
+}
+
+#head,
+#Eye01,
+#Minute,
+#Hour_1,
+#tree01,
+#tree02,
+#tree03,
+#tree04,
+#tree05,
+#tree06,
+#tree07,
+#tree08
+{
+    cursor: pointer;
+    transform-box: fill-box;
+}
+
+#head
+{
+    animation: head ease-in-out 1.6s infinite alternate; 
+    transform-origin: bottom;
+}
+
+@keyframes head
+{
+    0%{ transform:rotate(5deg); }
+    100%{ transform:rotate(-5deg); }
+}
+
+#Eye01
+{
+    animation: blink 7s step-end infinite both;
+    transform-origin: center;
+}
+@keyframes blink 
+{
+    from, to, 10%, 25%, 80%
+    {
+        transform: scaleY(1);
+    }
+    8%, 23%, 78%
+    {
+        transform: scaleY(0.1);
+    }
+}
+
+#Minute
+{
+    animation: time 10s infinite linear;
+    transform-origin: bottom;
+}
+
+#Hour_1
+{
+    animation: time 60s infinite linear;
+    transform-origin:right;
+}
+@keyframes time
+{
+    0%
+    {
+        transform: rotateX(0deg);
+    }
+    100%
+    {
+        transform: rotateZ(359deg);
+    }
+}
+
+
+
+#tree01
+{
+    animation: swing ease-in-out 1.5s infinite alternate;
+    transform-origin: bottom;
+}
+#tree02
+{
+    animation: swing ease-in-out 1.9s infinite alternate;
+    transform-origin: bottom;
+}
+
+#tree03
+{
+    animation: swing ease-in-out 1.5s infinite alternate;
+    transform-origin: left;
+}
+
+#tree04
+{
+    animation: swing ease-in-out 2.1s infinite alternate;
+    transform-origin: top;
+}
+
+#tree05
+{
+    animation: swing ease-in-out 2.5s infinite alternate;
+    transform-origin: top;
+}
+#tree06
+{
+    animation: swing ease-in-out 2.5s infinite alternate;
+    transform-origin:inherit;
+}
+#tree07
+{
+    animation: swing ease-in-out 2.1s infinite alternate;
+    transform-origin: top;
+}
+
+#tree08
+{
+    animation: swing ease-in-out 2.8s infinite alternate;
+    transform-origin: top;
+}
+
+
+
+@keyframes swing
+{
+   0%{ transform: rotate(-6deg);}
+   100%{ transform: rotate(6deg);}
+
+}
+
+.st36
+{
+    font-family: 'Satisfy', cursive !important;   
+}
+svg .text
+{
+    width: 100%;
+    fill: transparent;
+    stroke-width: 0.8;
+    stroke-linejoin: round;
+    stroke-dasharray: 90,310;
+    stroke-dashoffset: 0;
+    animation: text 8s infinite linear;
+}
+
+svg .text:nth-child(4n + 1)
+{
+    stroke: rgb(255, 95, 46);
+    animation-delay: -2s;
+}
+svg .text:nth-child(4n + 2)
+{
+    stroke: #491b0b;
+    animation-delay: -4s;
+}
+
+
+svg .text:nth-child(4n + 3)
+{
+    stroke:#fbb03b;
+    animation-delay: -6s;
+}
+svg .text:nth-child(4n + 4)
+{
+    stroke: #000;
+    animation-delay: -8s;
+}
+
+
+@keyframes text
+{
+    100%
+    {
+        stroke-dashoffset: -400;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
