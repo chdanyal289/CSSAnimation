@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: poppins, sans-serif;
+  background: #4e648a;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
+}
+
+.wire {
+  height: 50%;
+  border-left: 3px dashed #000;
+  align-self: flex-start;
+  transform: translate(-48px, 0);
+  z-index: -1;
+  transition: border 0.5s;
+}
+.bulb {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tip {
+  height: 10px;
+  width: 20px;
+  border: 2px solid;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  transition: 1s all;
+  position: absolute;
+  top: -10px;
+  transition-delay: 0.5;
+  background: #647689;
+}
+
+.holder {
+  height: 120px;
+  width: 90px;
+  border: 2px solid;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  z-index: 0;
+  transition: 1s all;
+  transition-delay: 0.5;
+  background: #647689;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /*     justify-content: center; */
+  align-items: center;
+}
+
+.holder div {
+  width: 100%;
+  border-bottom: 3px solid #000;
+  height: 17px;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.holder div:nth-child(1) {
+  margin-top: 14px;
+  width: 90%;
+}
+
+.glass {
+  border-radius: 50%;
+  /*     border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%; */
+
+  width: 170px;
+  height: 190px;
+  border: 2px solid #000;
+  position: absolute;
+  top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  transition: 1s all;
+  background: #4e648a;
+}
+.bulb {
+  cursor: pointer;
+}
+.bulb:hover .holder {
+  background: #eff0f0;
+}
+
+.bulb:hover .tip {
+  background: #eff0f0;
+}
+
+.bulb:hover ~ .wire {
+  border-left: 3px solid red;
+}
+
+.glass span {
+  transition: 0.5s all;
+  font-size: 14px;
+}
+
+.bulb:hover .glass span {
+  opacity: 0;
+}
+
+.bulb:hover .glass {
+  background: gold;
+  box-shadow: 0 120px 200px 150px gold;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
